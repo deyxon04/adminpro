@@ -13,6 +13,6 @@ import { PagesModule } from "./pages/pages.module";
   declarations: [AppComponent, LoginComponent, RegisterComponent],
   imports: [BrowserModule, APP_ROUTES, PagesModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

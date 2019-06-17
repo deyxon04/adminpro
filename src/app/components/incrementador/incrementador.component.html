@@ -1,0 +1,16 @@
+<h4 class="card-title">
+  {{leyenda}}
+</h4>
+<div class="input-group mb-3">
+  <div class="input-group-prepend" id="button-addon3">
+    <button (click)="changevalue(5)" class="btn btn-outline-secondary" type="button">
+      <i class="mdi mdi-plus">
+      </i>
+    </button>
+  </div>
+  <input #txtvalor name="valor" [(ngModel)]="porcentaje" (ngModelChange)="onChanges($event)" type="number" min="1" max="100" class="form-control" placeholder="" aria-label="Example text with two button addons"
+    aria-describedby="button-addon3">
+  <button (click)="changevalue(-5)" class="btn btn-outline-secondary" type="button"><i class="mdi mdi-minus">
+    </i>
+  </button>
+</div>
