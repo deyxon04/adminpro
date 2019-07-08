@@ -14,6 +14,9 @@ import { IncrementadorComponent } from "../components/incrementador/incrementado
 //ng2-charts
 import { ChartsModule } from "ng2-charts";
 import { GraficoDonaComponent } from "../components/grafico-dona/grafico-dona.component";
+import { PromisesComponent } from './promises/promises.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,14 +25,17 @@ import { GraficoDonaComponent } from "../components/grafico-dona/grafico-dona.co
     Graficas1Component,
     PagesComponent,
     IncrementadorComponent,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    PromisesComponent,
+    RxjsComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
     PAGES_ROUTES,
     FormsModule,
-    ChartsModule
+    ChartsModule,
+    HttpClientModule
   ],
   exports: [
     DashboardComponent,
